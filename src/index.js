@@ -6,9 +6,11 @@ import client from "./apollo";
 import GlobalStyles from "./globalStyles";
 
 ReactDOM.render(
-  <ApolloProvider client={client}>
+  <>
     <GlobalStyles />
-    <App />
-  </ApolloProvider>,
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>
+  </>,
   document.getElementById("root")
 );
